@@ -1,0 +1,97 @@
+
+.body{
+     margin: 0;
+     padding: 0;
+     font-family: sans-serif;  
+}
+.box{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 28%;
+     padding: 40px;
+     box-sizing: border-box;
+     box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+     background: rgba(18, 15, 15, 0.8);
+     border-radius: 10px;
+}
+.box  h1{
+     margin: 0 0 30px;
+     padding: 0;
+     color: #fff;
+ 
+}
+.box  .inputBox{
+     position: relative;
+}
+.box label{
+     color: #fff; 
+     font-size: 16px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     pointer-events: none;
+     transition: .5s;
+}
+.box .inputBox .input:focus ~label ,
+.box .inputBox .input:valid~label
+{
+ top: -20px;
+ font-size: 10px;
+  color: aqua;
+}
+.box .inputBox  .input:focus{
+     border-bottom:  1px solid aqua;
+}
+.box .inputBox  .input{
+     min-width:100%;
+     padding: 10px 0px;
+     font-size: 16px;
+     margin-bottom: 4em;
+     margin-right: 2rem;
+     color:#fff;
+     border: none;
+     border-bottom:  1px solid rgb(245, 240, 240);
+     outline: none;
+     background: transparent;
+}
+@media screen and (max-width: 780px) {  
+     .box{
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: auto;
+          padding: 40px;
+          box-sizing: border-box;
+          box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+          background: rgba(18, 15, 15, 0.8);
+          border-radius: 20px;
+     }
+     .box > .Button{
+      font-weight: 600;
+      font-size: 1rem;
+     }
+     
+   }
+
+   @media screen and (width: 1669px) {  
+     .box{
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 600px;
+          padding: 40px;
+          box-sizing: border-box;
+          box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+          background: rgba(18, 15, 15, 0.8);
+          border-radius: 10px;
+     }
+      .box > .Button{
+          font-weight: 600;
+          font-size: 2rem;
+         }
+     
+   }

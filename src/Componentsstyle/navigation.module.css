@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width:99.6%;
+    margin:  4px 4px 4px 4px;
+    padding:10px;
+    background-color: #d6e2f5;
+}
